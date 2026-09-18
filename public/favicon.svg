@@ -1,4 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="8" fill="#1A382B" />
-  <path d="M16 26V16M16 16C16 11 11 9 8 9C8 14 11 16 16 16ZM16 16C16 12 20 10 24 10C24 14 21 16 16 16Z" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+<svg viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="26" fill="#1A382B" />
+  <defs>
+    <linearGradient id="fav-leaf" x1="20" y1="105" x2="60" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#135E35" />
+      <stop offset="50%" stop-color="#1E824C" />
+      <stop offset="100%" stop-color="#2ECC71" />
+    </linearGradient>
+    <linearGradient id="fav-tech" x1="60" y1="15" x2="100" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0072B5" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#00A3E0" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, -2)">
+    <!-- Metade Direita Tech -->
+    <path d="M55 18 C70 38 98 65 98 88 C98 108 78 118 55 118 C55 118 55 96 55 89 C67 89 76 80 76 70 C76 57 65 42 55 30 Z" fill="url(#fav-tech)" />
+    <!-- Circuitos -->
+    <g stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.95">
+      <path d="M63 48 L63 64 L76 64" />
+      <circle cx="76" cy="64" r="2" fill="#FFFFFF" />
+      <path d="M70 56 L80 66 L80 80 L88 80" />
+      <circle cx="88" cy="80" r="2" fill="#FFFFFF" />
+      <path d="M61 74 L66 74 L66 94 L73 94" />
+      <circle cx="73" cy="94" r="2" fill="#FFFFFF" />
+      <path d="M65 98 L65 112" />
+      <circle cx="65" cy="112" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Metade Esquerda Folha -->
+    <path d="M55 18 C40 38 12 65 12 88 C12 108 32 118 55 118 C55 118 55 96 55 89 C43 89 34 80 34 70 C34 57 45 42 55 30 Z" fill="url(#fav-leaf)" />
+    <path d="M30 58 C20 51 14 38 17 26 C28 27 36 37 35 50 Z" fill="#2ECC71" />
+    <path d="M24 78 C14 74 9 64 11 54 C21 55 28 64 29 74 Z" fill="#1E824C" />
+    
+    <!-- Painel Solar no Topo -->
+    <path d="M30 36 L36 18" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" />
+    <g transform="translate(36, 17) rotate(-18)">
+      <rect x="-9" y="-7" width="18" height="14" rx="1" fill="#0F241C" stroke="#2ECC71" stroke-width="1" />
+      <line x1="-9" y1="-2" x2="9" y2="-2" stroke="#8CCFD0" stroke-width="0.7" />
+      <line x1="-9" y1="3" x2="9" y2="3" stroke="#8CCFD0" stroke-width="0.7" />
+      <line x1="-3" y1="-7" x2="-3" y2="7" stroke="#8CCFD0" stroke-width="0.7" />
+      <line x1="3" y1="-7" x2="3" y2="7" stroke="#8CCFD0" stroke-width="0.7" />
+    </g>
+
+    <!-- Gota Negativa Central -->
+    <path d="M55 36 C62 50 70 63 70 73 C70 82 63 88 55 88 C47 88 40 82 40 73 C40 63 48 50 55 36 Z" fill="#FFFFFF" />
+  </g>
 </svg>

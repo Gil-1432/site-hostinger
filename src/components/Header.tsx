@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, Menu, X, ArrowUpRight, Sprout } from 'lucide-react';
+import { MessageCircle, Menu, X, ArrowUpRight } from 'lucide-react';
 import { NAV_LINKS, WHATSAPP_URL } from '../data/content';
+import { RenovasoloLogo } from './RenovasoloLogo';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,24 +57,15 @@ export const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Typographic Logo */}
+          {/* Official Renovasolo Climatech Logo */}
           <a
             href="#inicio"
             onClick={(e) => handleNavClick(e, '#inicio')}
-            className="flex items-center gap-2.5 group"
+            className="flex items-center group focus:outline-none"
             id="brand-logo"
+            aria-label="Renovasolo Climatech - Início"
           >
-            <div className="w-9 h-9 rounded-lg bg-[#2ECC71] flex items-center justify-center text-[#1A382B] shadow-sm group-hover:scale-105 transition-transform duration-200">
-              <Sprout className="w-5 h-5 stroke-[2.2]" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight text-white leading-none font-sans">
-                Renovasolo
-              </span>
-              <span className="text-[11px] font-semibold tracking-wider uppercase text-[#8CCFD0] leading-tight">
-                Climatech
-              </span>
-            </div>
+            <RenovasoloLogo theme="dark" size="md" showSoilBase />
           </a>
 
           {/* Desktop Navigation Links */}

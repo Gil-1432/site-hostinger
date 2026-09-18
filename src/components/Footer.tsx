@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Sprout, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { NAV_LINKS, CONTACT_INFO, WHATSAPP_URL } from '../data/content';
 import { PrivacyModal } from './PrivacyModal';
+import { RenovasoloLogo } from './RenovasoloLogo';
 
 export const Footer: React.FC = () => {
   const [privacyModalOpen, setPrivacyModalOpen] = useState(false);
@@ -35,18 +36,8 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
             {/* Column 1: Brand & Description */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#2ECC71] flex items-center justify-center text-[#1A382B]">
-                  <Sprout className="w-5 h-5 stroke-[2.2]" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-bold tracking-tight text-white leading-none">
-                    Renovasolo
-                  </span>
-                  <span className="text-[10px] font-semibold tracking-wider uppercase text-[#8CCFD0]">
-                    Climatech
-                  </span>
-                </div>
+              <div>
+                <RenovasoloLogo theme="dark" size="lg" showTagline showSoilBase />
               </div>
 
               <p className="text-sm text-[#F4F1EA]/80 leading-relaxed max-w-sm">
