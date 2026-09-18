@@ -1,0 +1,6 @@
+{
+  "name": "Renovasolo Climatech",
+  "description": "Conectamos ciência, tecnologia e agricultura regenerativa para recuperar solos, gerar valor no campo e apoiar a descarbonização das cadeias produtivas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

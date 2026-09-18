@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-forest: #1A382B;
+  --color-forest-dark: #12281E;
+  --color-mata: #285944;
+  --color-emerald-brand: #2ECC71;
+  --color-sand-bg: #F4F1EA;
+  --color-soil: #4A3B32;
+  --color-terracotta: #B96F4A;
+  --color-sand-gold: #D9C28F;
+  --color-petrol: #174A50;
+  --color-sky-soft: #8CCFD0;
+  --color-text-muted: #66736B;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F4F1EA;
+  color: #1A382B;
+}
+
