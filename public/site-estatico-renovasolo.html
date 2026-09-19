@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renovasolo Climatech | Agricultura regenerativa e descarbonização</title>
+  <meta name="description" content="Conectamos ciência, tecnologia e agricultura regenerativa para recuperar solos, gerar valor no campo e apoiar a descarbonização das cadeias produtivas." />
+  <meta name="keywords" content="Agricultura regenerativa, Regeneração do solo, Climatech, Descarbonização, Remoção de carbono, Carmo do Rio Claro — MG" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              forest: '#145A32',
+              dark: '#1A382B',
+              leaf: '#2ECC71',
+              tech: '#0284C7',
+              soil: '#5A3A22',
+              sand: '#D9C28F',
+              cream: '#F4F1EA',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F4F1EA;
+      color: #1A382B;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="bg-[#F4F1EA] text-[#1A382B] antialiased selection:bg-[#2ECC71]/30 selection:text-[#145A32]">
+
+  <!-- ==================== HEADER NAVEGAÇÃO ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#1A382B]/90 backdrop-blur-md py-4 text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- LOGO OFICIAL -->
+        <a href="#inicio" class="inline-flex items-center gap-3 group focus:outline-none">
+          <!-- Símbolo SVG da Gota -->
+          <svg viewBox="0 0 160 190" class="w-10 h-10 shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-leaf" x1="15" y1="180" x2="80" y2="15" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#145A32" />
+                <stop offset="45%" stop-color="#1E824C" />
+                <stop offset="100%" stop-color="#2ECC71" />
+              </linearGradient>
+              <linearGradient id="nav-tech" x1="80" y1="15" x2="150" y2="180" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0072B5" />
+                <stop offset="50%" stop-color="#0284C7" />
+                <stop offset="100%" stop-color="#00A3E0" />
+              </linearGradient>
+            </defs>
+            <!-- Lado Tech Azul -->
+            <path d="M80 18 C105 50 150 95 150 135 C150 168 118 185 80 185 C80 185 80 150 80 140 C100 140 115 125 115 110 C115 90 95 65 80 45 Z" fill="url(#nav-tech)" />
+            <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M90 60 L90 85 L112 85" /><circle cx="112" cy="85" r="3.2" fill="#FFFFFF" />
+              <path d="M100 70 L116 88 L116 110 L130 110" /><circle cx="130" cy="110" r="3.2" fill="#FFFFFF" />
+              <path d="M88 100 L96 100 L96 135 L108 135" /><circle cx="108" cy="135" r="3.2" fill="#FFFFFF" />
+              <path d="M106 120 L122 120 L122 142" /><circle cx="122" cy="142" r="3.2" fill="#FFFFFF" />
+              <path d="M94 146 L94 170" /><circle cx="94" cy="170" r="3.2" fill="#FFFFFF" />
+              <path d="M110 148 L126 148 L126 162" /><circle cx="126" cy="162" r="3.2" fill="#FFFFFF" />
+            </g>
+            <!-- Lado Folha Verde -->
+            <path d="M80 18 C55 50 10 95 10 135 C10 168 42 185 80 185 C80 185 80 150 80 140 C60 140 45 125 45 110 C45 90 65 65 80 45 Z" fill="url(#nav-leaf)" />
+            <path d="M38 85 C22 75 14 55 18 36 C35 38 48 52 46 72 Z" fill="#1E824C" />
+            <path d="M30 115 C12 110 5 95 8 80 C24 82 35 94 36 108 Z" fill="#145A32" />
+            <!-- Haste e Painel Solar -->
+            <path d="M40 50 L48 24" stroke="#145A32" stroke-width="3.6" stroke-linecap="round" />
+            <g transform="translate(48, 22) rotate(-18)">
+              <rect x="-14" y="-11" width="28" height="22" rx="2" fill="#1A382B" stroke="#2ECC71" stroke-width="1.5" />
+              <line x1="-14" y1="-3" x2="14" y2="-3" stroke="#8CCFD0" stroke-width="1.1" />
+              <line x1="-14" y1="4" x2="14" y2="4" stroke="#8CCFD0" stroke-width="1.1" />
+              <line x1="-5" y1="-11" x2="-5" y2="11" stroke="#8CCFD0" stroke-width="1.1" />
+              <line x1="5" y1="-11" x2="5" y2="11" stroke="#8CCFD0" stroke-width="1.1" />
+            </g>
+            <!-- Gota Negativa -->
+            <path d="M80 50 C92 70 105 92 105 110 C105 125 94 135 80 135 C66 135 55 125 55 110 C55 92 68 70 80 50 Z" fill="#FFFFFF" />
+          </svg>
+
+          <!-- Tipografia -->
+          <div class="flex flex-col leading-none">
+            <span class="font-black text-xl tracking-tight text-white">RENOVASOLO</span>
+            <span class="font-bold text-xs tracking-[0.28em] text-[#8CCFD0] mt-1">CLIMATECH</span>
+            <div class="w-full h-1 rounded-full bg-gradient-to-r from-[#2ECC71] via-[#0284C7] to-[#5A3A22] mt-1"></div>
+          </div>
+        </a>
+
+        <!-- LINKS DESKTOP -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white/85">
+          <a href="#inicio" class="hover:text-[#2ECC71] transition-colors">Início</a>
+          <a href="#solucoes" class="hover:text-[#2ECC71] transition-colors">Soluções</a>
+          <a href="#sobre" class="hover:text-[#2ECC71] transition-colors">Sobre</a>
+          <a href="#diferenciais" class="hover:text-[#2ECC71] transition-colors">Diferenciais</a>
+          <a href="#faq" class="hover:text-[#2ECC71] transition-colors">FAQ</a>
+          <a href="#contato" class="hover:text-[#2ECC71] transition-colors">Contato</a>
+        </nav>
+
+        <!-- CTA WHATSAPP -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/5535998376012?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Renovasolo%20Climatech." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#2ECC71] hover:bg-[#27ae60] text-[#1A382B] text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200">
+            <span>Falar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SEÇÃO HERO ==================== -->
+  <section id="inicio" class="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-gradient-to-b from-[#1A382B] via-[#1F4434] to-[#1A382B] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Texto & Missão -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#285944]/80 border border-[#2ECC71]/30 text-xs font-semibold text-white">
+            <span class="w-2 h-2 rounded-full bg-[#2ECC71] animate-pulse"></span>
+            <span>Climatech Brasileira &middot; Tecnologia que Regenera o Solo</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Acreditamos que enfrentar as mudanças climáticas e garantir a segurança alimentar do planeta não são objetivos opostos — <span class="text-[#8CCFD0]">são a mesma missão.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#F4F1EA]/90 leading-relaxed max-w-2xl">
+            Somos uma climatech nascida para unir ciência, tecnologia e agricultura regenerativa. Atuamos na restauração da fertilidade dos solos e no apoio à remoção de carbono da atmosfera, gerando valor real para o produtor e descarbonizando cadeias globais.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/5535998376012" target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#2ECC71] hover:bg-[#27ae60] text-[#1A382B] font-bold text-base shadow-lg transition-all">
+              Falar no WhatsApp
+            </a>
+            <a href="#solucoes" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-base transition-all">
+              Conhecer Soluções
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-white/80">
+            <div>&bull; Rastreabilidade e rigor técnico</div>
+            <div>&bull; Viabilidade econômica no campo</div>
+            <div>&bull; Carmo do Rio Claro — MG</div>
+          </div>
+        </div>
+
+        <!-- Imagem Fotográfica & Selo Oficial -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/15 bg-[#12281E]">
+            <img src="./assets/hero_soil_hands_1789587891811-CoGzY2yU.jpg" alt="Solo fértil nas mãos" class="w-full h-80 sm:h-96 lg:h-[420px] object-cover" />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#12281E]/95 via-[#12281E]/70 to-transparent p-5 text-white">
+              <span class="text-xs font-semibold text-[#8CCFD0]">&bull; Solo vivo, produtivo e resiliente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO SOLUÇÕES ==================== -->
+  <section id="solucoes" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#145A32]">Portfólio Estratégico</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1A382B]">Soluções Práticas para o Campo</h2>
+        <p class="text-base text-[#4A3B32]">Tecnologia climática aplicada diretamente na lavoura, unindo produtividade agronômica e descarbonização mensurável.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-[#FBF9F5]">
+          <img src="./assets/sol_bioinsumos_1789587915386-hV3Wb8Aw.jpg" alt="Bioinsumos" class="w-full h-48 object-cover" />
+          <div class="p-6 space-y-3">
+            <span class="text-xs font-bold text-[#145A32] uppercase">Biotecnologia</span>
+            <h3 class="text-xl font-bold text-[#1A382B]">Bioinsumos e Regeneração Biológica</h3>
+            <p class="text-sm text-[#4A3B32]">Inoculantes avançados, consórcios microbianos e biofertilizantes formulados para reativar a microbiologia do solo e fixar nutrientes.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-[#FBF9F5]">
+          <img src="./assets/sol_remineralizacao_1789587928116-DbgcoqR3.jpg" alt="Remineralização" class="w-full h-48 object-cover" />
+          <div class="p-6 space-y-3">
+            <span class="text-xs font-bold text-[#0284C7] uppercase">Geologia Agrícola</span>
+            <h3 class="text-xl font-bold text-[#1A382B]">Remineralização & Rochagem de Solo</h3>
+            <p class="text-sm text-[#4A3B32]">Uso de pós de rocha e minerais naturais para reposição equilibrada de macro e micronutrientes, promovendo o intemperismo acelerado com captura permanente de CO₂.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-[#FBF9F5]">
+          <img src="./assets/sol_residuos_1789587939617-CDqCRVmk.jpg" alt="Gestão de Resíduos" class="w-full h-48 object-cover" />
+          <div class="p-6 space-y-3">
+            <span class="text-xs font-bold text-[#B96F4A] uppercase">Economia Circular</span>
+            <h3 class="text-xl font-bold text-[#1A382B]">Valorização de Resíduos e Biochar</h3>
+            <p class="text-sm text-[#4A3B32]">Transformação de subprodutos agroindustriais em condicionadores de solo de alta estabilidade térmica e biológica, retendo água e carbono por séculos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO SOBRE & IDENTIDADE ==================== -->
+  <section id="sobre" class="py-20 bg-[#F4F1EA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Card do Logotipo Oficial -->
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#285944]/15 shadow-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Vetor Oficial Renderizado -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center p-6 bg-[#FBF9F5] rounded-2xl border border-stone-200 text-center">
+            <img src="./assets/logo-renovasolo-vertical.svg" alt="Logotipo Oficial Renovasolo Climatech" class="w-64 h-auto" />
+            <a href="./assets/logo-renovasolo-vertical.svg" download class="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#145A32] bg-white px-4 py-2 rounded-lg border border-stone-300 hover:border-[#0284C7]">
+              Baixar Vetor Oficial (.SVG)
+            </a>
+          </div>
+
+          <!-- Conceito e Pilares -->
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#0284C7]">Identidade & Propósito</span>
+            <h3 class="text-3xl font-extrabold text-[#1A382B]">Tecnologia que Regenera o Solo</h3>
+            <p class="text-base text-[#4A3B32] leading-relaxed">
+              O logotipo da Renovasolo Climatech expressa graficamente nossa visão: a fusão da fotossíntese natural e dos ciclos do solo com a inteligência cibernética, a rastreabilidade digital e a viabilidade econômica para o produtor rural.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
+                <strong class="text-[#145A32] block">Folha & Painel Solar:</strong> Energia limpa e captura biológica.
+              </div>
+              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
+                <strong class="text-[#0284C7] block">Gota & Circuitos:</strong> Gestão hídrica e inteligência digital.
+              </div>
+              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
+                <strong class="text-[#1E824C] block">Plântula com Raízes:</strong> Microbiologia e enraizamento profundo.
+              </div>
+              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
+                <strong class="text-[#5A3A22] block">Camada de Solo Fértil:</strong> O alicerce da segurança alimentar.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO CONTATO ==================== -->
+  <section id="contato" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-4 mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#145A32]">Fale Conosco</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1A382B]">Inicie sua Jornada Regenerativa</h2>
+        <p class="text-base text-[#4A3B32]">Nossa equipe técnica atende produtores, cooperativas e empresas interessadas em projetos de agricultura de baixo carbono.</p>
+      </div>
+
+      <form action="enviar-contato.php" method="POST" class="bg-[#FBF9F5] p-8 rounded-2xl border border-stone-200 shadow-sm space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase text-[#1A382B] mb-2">Nome Completo *</label>
+            <input type="text" name="nome" required placeholder="Seu nome ou da sua empresa" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-[#145A32] bg-white text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-[#1A382B] mb-2">E-mail Profissional *</label>
+            <input type="email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-[#145A32] bg-white text-sm" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase text-[#1A382B] mb-2">Telefone / WhatsApp *</label>
+            <input type="tel" name="telefone" required placeholder="(35) 99837-6012" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-[#145A32] bg-white text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-[#1A382B] mb-2">Cidade / Estado</label>
+            <input type="text" name="cidade_estado" placeholder="Ex: Carmo do Rio Claro - MG" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-[#145A32] bg-white text-sm" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-[#1A382B] mb-2">Mensagem ou Projeto</label>
+          <textarea name="mensagem" rows="4" placeholder="Conte-nos sobre sua fazenda, cultura agrícola ou interesse em descarbonização..." class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-[#145A32] bg-white text-sm"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl bg-[#145A32] hover:bg-[#1E824C] text-white font-bold text-base shadow-md hover:shadow-lg transition-all">
+          Enviar Mensagem para Renovasolo
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+  <footer class="bg-[#1A382B] text-white py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/70">
+      <div>
+        <span class="font-black text-white text-lg block">RENOVASOLO CLIMATECH</span>
+        <p class="text-xs mt-1 text-[#8CCFD0]">Regenerando a terra, descarbonizando o futuro.</p>
+      </div>
+      <div class="text-xs text-center md:text-right">
+        <p>Carmo do Rio Claro — MG &middot; CNPJ e operações agrícolas</p>
+        <p class="mt-1">&copy; 2026 Renovasolo Climatech. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
