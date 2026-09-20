@@ -4,10 +4,20 @@ import solBioImg from '../assets/images/sol_bioinsumos_1789587915386.jpg';
 import solRemineralizacaoImg from '../assets/images/sol_remineralizacao_1789587928116.jpg';
 import solResiduosImg from '../assets/images/sol_residuos_1789587939617.jpg';
 import difTechImg from '../assets/images/dif_tech_soil_1789587951437.jpg';
-import { SolutionItem, ImpactMetric, PartnershipAudience, DifferentialItem } from '../types';
+import { SolutionItem, ImpactMetric, PartnershipAudience, DifferentialItem, MissionVisionValuesData } from '../types';
 
 export const WHATSAPP_URL =
   'https://wa.me/5535998376012?text=Ol%C3%A1%2C%20gostaria%20de%20entender%20como%20a%20Renovasolo%20pode%20gerar%20valor%20para%20o%20meu%20neg%C3%B3cio.';
+
+export const LINKEDIN_URL =
+  'https://www.linkedin.com/company/renovasolo-climatech/';
+
+/**
+ * Link oficial do Instagram da Renovasolo Climatech.
+ * Você pode alterar a URL abaixo quando a página oficial estiver pronta.
+ */
+export const INSTAGRAM_URL =
+  'https://www.instagram.com/renovasolo.climatech/';
 
 export const CONTACT_INFO = {
   email: 'contato@renovasoloclimatech.com.br',
@@ -15,21 +25,65 @@ export const CONTACT_INFO = {
   phoneRaw: '+5535998376012',
   location: 'Carmo do Rio Claro — MG',
   locationDetail: 'Sul de Minas Gerais, Brasil',
+  linkedin: 'https://www.linkedin.com/company/renovasolo-climatech/',
+  linkedinUser: 'renovasolo-climatech',
+  instagram: 'https://www.instagram.com/renovasolo.climatech/',
+  instagramUser: '@renovasolo.climatech',
 };
 
 export const NAV_LINKS = [
   { name: 'Início', href: '#inicio' },
   { name: 'Sobre nós', href: '#sobre' },
+  { name: 'Missão & Valores', href: '#missao-visao-valores' },
   { name: 'Soluções', href: '#solucoes' },
   { name: 'Parcerias', href: '#parcerias' },
   { name: 'Diferenciais', href: '#diferenciais' },
   { name: 'Contato', href: '#contato' },
 ];
 
+export const MISSION_VISION_VALUES: MissionVisionValuesData = {
+  mission:
+    'Unir pessoas e tecnologias inovadoras para regenerar a saúde do solo, descarbonizar cadeias produtivas e acelerar a transição para uma economia de baixo carbono, gerando impacto climático real e valor sustentável desde o primeiro dia de parceria.',
+  vision:
+    'Ser a climatech de referência na América Latina em soluções de regeneração de solo e captura de carbono, liderando a transformação da agricultura sustentável e impulsionando corporações rumo à neutralidade de emissões.',
+  values: [
+    {
+      title: 'Regeneração na Raiz',
+      description:
+        'Foco na restauração da terra como o ativo fundamental para a produtividade agrícola e o equilíbrio do clima global.',
+      iconName: 'sprout',
+    },
+    {
+      title: 'Inovação Centrada em Pessoas',
+      description:
+        'Aplicação da tecnologia de precisão a serviço do produtor, das corporações e da comunidade, conectando saberes para potencializar resultados.',
+      iconName: 'users',
+    },
+    {
+      title: 'Impacto Transparente e Mensurável',
+      description:
+        'Compromisso com dados rigorosos e reportes claros para entregar conformidade, credibilidade e valor financeiro e reputacional aos parceiros.',
+      iconName: 'chart',
+    },
+    {
+      title: 'Liderança Climática',
+      description:
+        'Atuação proativa no combate ao aquecimento global, antecipando exigências regulatórias e promovendo a descarbonização nos Escopos 1, 2 e 3.',
+      iconName: 'climate',
+    },
+    {
+      title: 'Prosperidade Compartilhada',
+      description:
+        'Garantia de que a sustentabilidade socioambiental caminhe lado a lado com a viabilidade econômica de toda a cadeia de valor.',
+      iconName: 'prosperity',
+    },
+  ],
+};
+
 export const IMPACT_METRICS: ImpactMetric[] = [
   {
     id: 'hectares',
-    value: '15.000 hectares',
+    value: '5.000 hectares',
     description: 'De solos em processo de regeneração',
     iconName: 'leaf',
     tag: 'Área projetada',

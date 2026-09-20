@@ -1,7 +1,6 @@
 import React from 'react';
-import { MessageCircle, ArrowDown, ShieldCheck, Sparkles } from 'lucide-react';
+import { MessageCircle, ArrowDown, ShieldCheck, Sparkles, Sprout } from 'lucide-react';
 import { WHATSAPP_URL, IMAGES } from '../data/content';
-import { RenovasoloSymbol } from './RenovasoloLogo';
 
 export const Hero: React.FC = () => {
   const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -30,8 +29,8 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Mission copy & CTAs */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#285944]/80 border border-[#2ECC71]/30 text-xs font-semibold tracking-wide text-white">
-              <RenovasoloSymbol className="w-4 h-4 shrink-0" idSuffix="hero-badge" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#285944]/80 border border-[#2ECC71]/30 text-xs font-semibold tracking-wide text-white">
+              <span className="w-2 h-2 rounded-full bg-[#2ECC71] animate-pulse"></span>
               <span>Climatech Brasileira &middot; Tecnologia que Regenera o Solo</span>
             </div>
 
@@ -92,15 +91,6 @@ export const Hero: React.FC = () => {
               <div className="absolute -inset-1.5 bg-gradient-to-tr from-[#2ECC71]/30 via-[#8CCFD0]/20 to-[#B96F4A]/20 rounded-2xl blur-sm -z-10"></div>
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/15 bg-[#12281E]">
-                {/* Floating Brand Badge */}
-                <div className="absolute top-4 left-4 z-20 hidden sm:flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-[#1A382B]/90 backdrop-blur-md border border-white/20 shadow-lg">
-                  <RenovasoloSymbol className="w-5 h-5 shrink-0" idSuffix="hero-float" />
-                  <div className="flex flex-col text-left">
-                    <span className="text-[11px] font-black text-white tracking-tight leading-none">RENOVASOLO</span>
-                    <span className="text-[8px] font-bold text-[#8CCFD0] tracking-[0.2em] uppercase leading-tight">CLIMATECH</span>
-                  </div>
-                </div>
-
                 <img
                   src={IMAGES.hero}
                   alt="Amostra de solo fértil e vivo em mãos de especialista agrícola com lavoura regenerativa ao fundo"

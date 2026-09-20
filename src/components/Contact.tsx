@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, AlertCircle, CheckCircle2, Shield } from 'lucide-react';
-import { CONTACT_INFO, WHATSAPP_URL } from '../data/content';
+import { Mail, Phone, MapPin, Send, MessageCircle, AlertCircle, CheckCircle2, Shield, Linkedin, Instagram } from 'lucide-react';
+import { CONTACT_INFO, WHATSAPP_URL, LINKEDIN_URL, INSTAGRAM_URL } from '../data/content';
 import { ContactFormData } from '../types';
 
 export const Contact: React.FC = () => {
@@ -156,6 +156,43 @@ ${formData.message || 'Gostaria de solicitar atendimento comercial.'}`);
                     <span className="text-xs text-white/60 block font-medium">WhatsApp comercial</span>
                     <span className="text-sm font-semibold text-white">
                       {CONTACT_INFO.phoneFormatted}
+                    </span>
+                  </div>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-[#0077B5] text-white flex items-center justify-center shrink-0 font-bold">
+                    <Linkedin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs text-white/60 block font-medium">Página no LinkedIn</span>
+                    <span className="text-sm font-semibold text-white">
+                      company/renovasolo-climatech
+                    </span>
+                  </div>
+                </a>
+
+                {/* Instagram */}
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="contact-channel-instagram"
+                  className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center shrink-0 font-bold shadow-sm">
+                    <Instagram className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs text-white/60 block font-medium">Instagram oficial</span>
+                    <span className="text-sm font-semibold text-white">
+                      {CONTACT_INFO.instagramUser}
                     </span>
                   </div>
                 </a>

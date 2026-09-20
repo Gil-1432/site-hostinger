@@ -24,7 +24,7 @@ export const ImpactGoals: React.FC = () => {
 
         {/* 3 Indicators Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
-          {/* Card 1: 15.000 hectares */}
+          {/* Card 1: 5.000 hectares */}
           <div
             id="metric-hectares"
             className="rounded-2xl p-6 sm:p-8 bg-[#1A382B]/80 border border-[#285944] hover:border-[#2ECC71]/50 transition-all duration-300 shadow-md flex flex-col justify-between"

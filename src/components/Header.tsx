@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, Menu, X, ArrowUpRight } from 'lucide-react';
-import { NAV_LINKS, WHATSAPP_URL } from '../data/content';
-import { RenovasoloLogo } from './RenovasoloLogo';
+import { MessageCircle, Menu, X, ArrowUpRight, Linkedin, Instagram } from 'lucide-react';
+import { NAV_LINKS, WHATSAPP_URL, LINKEDIN_URL, INSTAGRAM_URL } from '../data/content';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,15 +56,20 @@ export const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Official Renovasolo Climatech Logo */}
+          {/* Brand Name Typography */}
           <a
             href="#inicio"
             onClick={(e) => handleNavClick(e, '#inicio')}
-            className="flex items-center group focus:outline-none"
+            className="flex flex-col group focus:outline-none"
             id="brand-logo"
             aria-label="Renovasolo Climatech - Início"
           >
-            <RenovasoloLogo theme="dark" size="md" showSoilBase />
+            <span className="text-xl sm:text-2xl font-black tracking-tight text-white leading-none font-sans group-hover:text-[#2ECC71] transition-colors">
+              Renovasolo
+            </span>
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#8CCFD0] leading-tight mt-0.5">
+              Climatech
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -90,8 +94,32 @@ export const Header: React.FC = () => {
             })}
           </nav>
 
-          {/* Header Action: WhatsApp Button */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* Header Action: WhatsApp, LinkedIn & Instagram Buttons */}
+          <div className="hidden sm:flex items-center gap-2">
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="header-linkedin-cta"
+              className="p-2.5 rounded-lg bg-white/10 hover:bg-[#0077B5] text-white/90 hover:text-white transition-colors duration-200 border border-white/10 hover:border-transparent"
+              aria-label="Página da Renovasolo Climatech no LinkedIn"
+              title="LinkedIn Oficial"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
+
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="header-instagram-cta"
+              className="p-2.5 rounded-lg bg-white/10 hover:bg-[#E1306C] text-white/90 hover:text-white transition-colors duration-200 border border-white/10 hover:border-transparent"
+              aria-label="Perfil da Renovasolo Climatech no Instagram"
+              title="Instagram Oficial"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -135,7 +163,7 @@ export const Header: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <div className="pt-3 border-t border-white/10 mt-2">
+            <div className="pt-3 border-t border-white/10 mt-2 space-y-2">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -144,6 +172,24 @@ export const Header: React.FC = () => {
               >
                 <MessageCircle className="w-4 h-4 fill-current" />
                 <span>Falar no WhatsApp</span>
+              </a>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white/10 hover:bg-[#0077B5] text-white text-sm font-semibold transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span>Página no LinkedIn</span>
+              </a>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white/10 hover:bg-[#E1306C] text-white text-sm font-semibold transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+                <span>Perfil no Instagram</span>
               </a>
             </div>
           </div>

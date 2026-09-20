@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
-import { NAV_LINKS, CONTACT_INFO, WHATSAPP_URL } from '../data/content';
+import { Mail, Phone, MapPin, ArrowUp, Linkedin, Instagram } from 'lucide-react';
+import { NAV_LINKS, CONTACT_INFO, WHATSAPP_URL, LINKEDIN_URL, INSTAGRAM_URL } from '../data/content';
 import { PrivacyModal } from './PrivacyModal';
-import { RenovasoloLogo } from './RenovasoloLogo';
 
 export const Footer: React.FC = () => {
   const [privacyModalOpen, setPrivacyModalOpen] = useState(false);
@@ -36,18 +35,43 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
             {/* Column 1: Brand & Description */}
             <div className="lg:col-span-5 space-y-4">
-              <div>
-                <RenovasoloLogo theme="dark" size="lg" showTagline showSoilBase />
+              <div className="flex flex-col">
+                <span className="text-2xl font-black tracking-tight text-white leading-none font-sans">
+                  Renovasolo
+                </span>
+                <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#8CCFD0] leading-tight mt-1">
+                  Climatech
+                </span>
               </div>
 
               <p className="text-sm text-[#F4F1EA]/80 leading-relaxed max-w-sm">
                 Conectamos ciência, tecnologia e agricultura regenerativa para recuperar solos, gerar valor no campo e apoiar a descarbonização das cadeias produtivas.
               </p>
 
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap items-center gap-3">
                 <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-[#285944] text-[#8CCFD0] border border-[#2ECC71]/20">
                   Regenerando a terra, descarbonizando o futuro.
                 </span>
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-[#0077B5] text-white text-xs font-semibold transition-all"
+                  aria-label="Página da Renovasolo Climatech no LinkedIn"
+                >
+                  <Linkedin className="w-3.5 h-3.5" />
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-[#E1306C] text-white text-xs font-semibold transition-all"
+                  aria-label="Perfil da Renovasolo Climatech no Instagram"
+                >
+                  <Instagram className="w-3.5 h-3.5" />
+                  <span>Instagram</span>
+                </a>
               </div>
             </div>
 
@@ -95,6 +119,28 @@ export const Footer: React.FC = () => {
                     className="hover:text-white transition-colors"
                   >
                     {CONTACT_INFO.phoneFormatted}
+                  </a>
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Linkedin className="w-4 h-4 text-[#0077B5] shrink-0" />
+                  <a
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    LinkedIn: renovasolo-climatech
+                  </a>
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Instagram className="w-4 h-4 text-[#E1306C] shrink-0" />
+                  <a
+                    href={INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Instagram: {CONTACT_INFO.instagramUser}
                   </a>
                 </li>
                 <li className="flex items-center gap-2.5">

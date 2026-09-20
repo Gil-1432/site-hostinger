@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ImpactGoals } from './components/ImpactGoals';
 import { About } from './components/About';
+import { MissionVisionValues } from './components/MissionVisionValues';
 import { Solutions } from './components/Solutions';
 import { Partnerships } from './components/Partnerships';
 import { Differentials } from './components/Differentials';
@@ -27,23 +28,26 @@ export default function App() {
         {/* 4. Sobre a Renovasolo */}
         <About />
 
-        {/* 5. Soluções Regenerativas */}
+        {/* 5. Missão, Visão e Valores */}
+        <MissionVisionValues />
+
+        {/* 6. Soluções Regenerativas */}
         <Solutions />
 
-        {/* 6. Públicos e Parcerias */}
+        {/* 7. Públicos e Parcerias */}
         <Partnerships />
 
-        {/* 7. Diferenciais */}
+        {/* 8. Diferenciais */}
         <Differentials />
 
-        {/* 8. Formulário de Contato */}
+        {/* 9. Formulário de Contato */}
         <Contact />
       </main>
 
-      {/* 9. Rodapé Institucional */}
+      {/* 10. Rodapé Institucional */}
       <Footer />
 
-      {/* 10. Botão Flutuante do WhatsApp */}
+      {/* 11. Botão Flutuante do WhatsApp */}
       <FloatingWhatsApp />
     </div>
   );

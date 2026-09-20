@@ -58,69 +58,30 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         
-        <!-- LOGO OFICIAL -->
-        <a href="#inicio" class="inline-flex items-center gap-3 group focus:outline-none">
-          <!-- Símbolo SVG da Gota -->
-          <svg viewBox="0 0 160 190" class="w-10 h-10 shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="nav-leaf" x1="15" y1="180" x2="80" y2="15" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#145A32" />
-                <stop offset="45%" stop-color="#1E824C" />
-                <stop offset="100%" stop-color="#2ECC71" />
-              </linearGradient>
-              <linearGradient id="nav-tech" x1="80" y1="15" x2="150" y2="180" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#0072B5" />
-                <stop offset="50%" stop-color="#0284C7" />
-                <stop offset="100%" stop-color="#00A3E0" />
-              </linearGradient>
-            </defs>
-            <!-- Lado Tech Azul -->
-            <path d="M80 18 C105 50 150 95 150 135 C150 168 118 185 80 185 C80 185 80 150 80 140 C100 140 115 125 115 110 C115 90 95 65 80 45 Z" fill="url(#nav-tech)" />
-            <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M90 60 L90 85 L112 85" /><circle cx="112" cy="85" r="3.2" fill="#FFFFFF" />
-              <path d="M100 70 L116 88 L116 110 L130 110" /><circle cx="130" cy="110" r="3.2" fill="#FFFFFF" />
-              <path d="M88 100 L96 100 L96 135 L108 135" /><circle cx="108" cy="135" r="3.2" fill="#FFFFFF" />
-              <path d="M106 120 L122 120 L122 142" /><circle cx="122" cy="142" r="3.2" fill="#FFFFFF" />
-              <path d="M94 146 L94 170" /><circle cx="94" cy="170" r="3.2" fill="#FFFFFF" />
-              <path d="M110 148 L126 148 L126 162" /><circle cx="126" cy="162" r="3.2" fill="#FFFFFF" />
-            </g>
-            <!-- Lado Folha Verde -->
-            <path d="M80 18 C55 50 10 95 10 135 C10 168 42 185 80 185 C80 185 80 150 80 140 C60 140 45 125 45 110 C45 90 65 65 80 45 Z" fill="url(#nav-leaf)" />
-            <path d="M38 85 C22 75 14 55 18 36 C35 38 48 52 46 72 Z" fill="#1E824C" />
-            <path d="M30 115 C12 110 5 95 8 80 C24 82 35 94 36 108 Z" fill="#145A32" />
-            <!-- Haste e Painel Solar -->
-            <path d="M40 50 L48 24" stroke="#145A32" stroke-width="3.6" stroke-linecap="round" />
-            <g transform="translate(48, 22) rotate(-18)">
-              <rect x="-14" y="-11" width="28" height="22" rx="2" fill="#1A382B" stroke="#2ECC71" stroke-width="1.5" />
-              <line x1="-14" y1="-3" x2="14" y2="-3" stroke="#8CCFD0" stroke-width="1.1" />
-              <line x1="-14" y1="4" x2="14" y2="4" stroke="#8CCFD0" stroke-width="1.1" />
-              <line x1="-5" y1="-11" x2="-5" y2="11" stroke="#8CCFD0" stroke-width="1.1" />
-              <line x1="5" y1="-11" x2="5" y2="11" stroke="#8CCFD0" stroke-width="1.1" />
-            </g>
-            <!-- Gota Negativa -->
-            <path d="M80 50 C92 70 105 92 105 110 C105 125 94 135 80 135 C66 135 55 125 55 110 C55 92 68 70 80 50 Z" fill="#FFFFFF" />
-          </svg>
-
-          <!-- Tipografia -->
-          <div class="flex flex-col leading-none">
-            <span class="font-black text-xl tracking-tight text-white">RENOVASOLO</span>
-            <span class="font-bold text-xs tracking-[0.28em] text-[#8CCFD0] mt-1">CLIMATECH</span>
-            <div class="w-full h-1 rounded-full bg-gradient-to-r from-[#2ECC71] via-[#0284C7] to-[#5A3A22] mt-1"></div>
-          </div>
+        <!-- LOGO OFICIAL (TIPOGRAFIA) -->
+        <a href="#inicio" class="flex flex-col group focus:outline-none">
+          <span class="font-black text-2xl tracking-tight text-white leading-none">RENOVASOLO</span>
+          <span class="font-bold text-xs tracking-[0.25em] text-[#8CCFD0] mt-1 uppercase">CLIMATECH</span>
         </a>
 
         <!-- LINKS DESKTOP -->
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white/85">
+        <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-white/85">
           <a href="#inicio" class="hover:text-[#2ECC71] transition-colors">Início</a>
-          <a href="#solucoes" class="hover:text-[#2ECC71] transition-colors">Soluções</a>
           <a href="#sobre" class="hover:text-[#2ECC71] transition-colors">Sobre</a>
+          <a href="#missao-visao-valores" class="hover:text-[#2ECC71] transition-colors">Missão & Valores</a>
+          <a href="#solucoes" class="hover:text-[#2ECC71] transition-colors">Soluções</a>
           <a href="#diferenciais" class="hover:text-[#2ECC71] transition-colors">Diferenciais</a>
-          <a href="#faq" class="hover:text-[#2ECC71] transition-colors">FAQ</a>
           <a href="#contato" class="hover:text-[#2ECC71] transition-colors">Contato</a>
         </nav>
 
-        <!-- CTA WHATSAPP -->
-        <div class="hidden sm:flex items-center gap-3">
+        <!-- CTA WHATSAPP, LINKEDIN & INSTAGRAM -->
+        <div class="hidden sm:flex items-center gap-2">
+          <a href="https://www.linkedin.com/company/renovasolo-climatech/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-white/10 hover:bg-[#0077B5] text-white text-xs font-semibold transition-all" title="LinkedIn Oficial">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/renovasolo.climatech/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-white/10 hover:bg-[#E1306C] text-white text-xs font-semibold transition-all" title="Instagram Oficial">
+            <span>Instagram</span>
+          </a>
           <a href="https://wa.me/5535998376012?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Renovasolo%20Climatech." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#2ECC71] hover:bg-[#27ae60] text-[#1A382B] text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200">
             <span>Falar no WhatsApp</span>
           </a>
@@ -221,46 +182,108 @@
     </div>
   </section>
 
-  <!-- ==================== SEÇÃO SOBRE & IDENTIDADE ==================== -->
+  <!-- ==================== SEÇÃO SOBRE ==================== -->
   <section id="sobre" class="py-20 bg-[#F4F1EA]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Card do Logotipo Oficial -->
-      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#285944]/15 shadow-lg">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          
-          <!-- Vetor Oficial Renderizado -->
-          <div class="lg:col-span-5 flex flex-col items-center justify-center p-6 bg-[#FBF9F5] rounded-2xl border border-stone-200 text-center">
-            <img src="./assets/logo-renovasolo-vertical.svg" alt="Logotipo Oficial Renovasolo Climatech" class="w-64 h-auto" />
-            <a href="./assets/logo-renovasolo-vertical.svg" download class="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#145A32] bg-white px-4 py-2 rounded-lg border border-stone-300 hover:border-[#0284C7]">
-              Baixar Vetor Oficial (.SVG)
-            </a>
-          </div>
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#285944]/15 shadow-lg max-w-4xl mx-auto space-y-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#0284C7]">Propósito & Atuação</span>
+        <h3 class="text-3xl font-extrabold text-[#1A382B]">Lucro com propósito: a lógica do impacto</h3>
+        <p class="text-base text-[#4A3B32] leading-relaxed">
+          Operamos sob a premissa do lucro com propósito: construímos um modelo de negócio em que a rentabilidade da empresa e do produtor cresce lado a lado com a recuperação de cada hectare de terra. Ao conectar a cadeia agrícola ao mercado global de carbono e às metas Net Zero, trabalhamos para demonstrar que recuperar o solo pode ser uma estratégia de valor, produtividade e resiliência para o futuro.
+        </p>
+        <div class="p-6 rounded-2xl bg-[#145A32] text-white">
+          <p class="font-bold text-lg">"Renovasolo Climatech. Regenerando a terra, descarbonizando o futuro."</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Conceito e Pilares -->
-          <div class="lg:col-span-7 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#0284C7]">Identidade & Propósito</span>
-            <h3 class="text-3xl font-extrabold text-[#1A382B]">Tecnologia que Regenera o Solo</h3>
-            <p class="text-base text-[#4A3B32] leading-relaxed">
-              O logotipo da Renovasolo Climatech expressa graficamente nossa visão: a fusão da fotossíntese natural e dos ciclos do solo com a inteligência cibernética, a rastreabilidade digital e a viabilidade econômica para o produtor rural.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
-                <strong class="text-[#145A32] block">Folha & Painel Solar:</strong> Energia limpa e captura biológica.
-              </div>
-              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
-                <strong class="text-[#0284C7] block">Gota & Circuitos:</strong> Gestão hídrica e inteligência digital.
-              </div>
-              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
-                <strong class="text-[#1E824C] block">Plântula com Raízes:</strong> Microbiologia e enraizamento profundo.
-              </div>
-              <div class="p-3 bg-[#F4F1EA] rounded-xl text-xs">
-                <strong class="text-[#5A3A22] block">Camada de Solo Fértil:</strong> O alicerce da segurança alimentar.
-              </div>
+  <!-- ==================== SEÇÃO MISSÃO, VISÃO E VALORES ==================== -->
+  <section id="missao-visao-valores" class="py-20 lg:py-28 bg-[#FBF9F5] border-t border-stone-200 text-[#1A382B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-[#145A32] bg-[#2ECC71]/15 px-3.5 py-1.5 rounded-full border border-[#2ECC71]/30 inline-block">
+          Diretrizes Estratégicas
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1A382B] tracking-tight">
+          Missão, Visão e Valores
+        </h2>
+        <p class="text-base sm:text-lg text-[#66736B]">
+          A base ética, científica e humana que guia nossa atuação no campo e na descarbonização global.
+        </p>
+      </div>
+
+      <!-- Grid Missão e Visão -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Missão -->
+        <div class="bg-white rounded-3xl p-8 sm:p-10 border border-[#285944]/20 shadow-md relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#145A32] via-[#2ECC71] to-[#8CCFD0]"></div>
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#145A32] bg-[#2ECC71]/15 px-3 py-1 rounded-full">
+                Nossa Missão
+              </span>
             </div>
+            <h3 class="text-2xl font-black text-[#1A382B] mb-3">Missão</h3>
+            <p class="text-base sm:text-lg text-[#334139] leading-relaxed">
+              Unir pessoas e tecnologias inovadoras para regenerar a saúde do solo, descarbonizar cadeias produtivas e acelerar a transição para uma economia de baixo carbono, gerando impacto climático real e valor sustentável desde o primeiro dia de parceria.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visão -->
+        <div class="bg-white rounded-3xl p-8 sm:p-10 border border-[#0284C7]/20 shadow-md relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0284C7] via-[#00A3E0] to-[#8CCFD0]"></div>
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#0284C7] bg-[#0284C7]/15 px-3 py-1 rounded-full">
+                Nossa Visão
+              </span>
+            </div>
+            <h3 class="text-2xl font-black text-[#1A382B] mb-3">Visão</h3>
+            <p class="text-base sm:text-lg text-[#334139] leading-relaxed">
+              Ser a climatech de referência na América Latina em soluções de regeneração de solo e captura de carbono, liderando a transformação da agricultura sustentável e impulsionando corporações rumo à neutralidade de emissões.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- Valores -->
+      <div class="mt-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#285944] block mb-1">Pilares Inegociáveis</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#1A382B]">Valores</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <h4 class="font-bold text-lg text-[#145A32] mb-2">Regeneração na Raiz</h4>
+            <p class="text-sm text-[#4A3B32]">Foco na restauração da terra como o ativo fundamental para a produtividade agrícola e o equilíbrio do clima global.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <h4 class="font-bold text-lg text-[#0284C7] mb-2">Inovação Centrada em Pessoas</h4>
+            <p class="text-sm text-[#4A3B32]">Aplicação da tecnologia de precisão a serviço do produtor, das corporações e da comunidade, conectando saberes para potencializar resultados.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <h4 class="font-bold text-lg text-[#174A50] mb-2">Impacto Transparente e Mensurável</h4>
+            <p class="text-sm text-[#4A3B32]">Compromisso com dados rigorosos e reportes claros para entregar conformidade, credibilidade e valor financeiro e reputacional aos parceiros.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <h4 class="font-bold text-lg text-[#285944] mb-2">Liderança Climática</h4>
+            <p class="text-sm text-[#4A3B32]">Atuação proativa no combate ao aquecimento global, antecipando exigências regulatórias e promovendo a descarbonização nos Escopos 1, 2 e 3.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm md:col-span-2 lg:col-span-2">
+            <h4 class="font-bold text-lg text-[#B96F4A] mb-2">Prosperidade Compartilhada</h4>
+            <p class="text-sm text-[#4A3B32]">Garantia de que a sustentabilidade socioambiental caminhe lado a lado com a viabilidade econômica de toda a cadeia de valor.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -315,8 +338,13 @@
         <span class="font-black text-white text-lg block">RENOVASOLO CLIMATECH</span>
         <p class="text-xs mt-1 text-[#8CCFD0]">Regenerando a terra, descarbonizando o futuro.</p>
       </div>
-      <div class="text-xs text-center md:text-right">
+      <div class="text-xs text-center md:text-right space-y-1">
         <p>Carmo do Rio Claro — MG &middot; CNPJ e operações agrícolas</p>
+        <p class="space-x-3">
+          <a href="https://www.linkedin.com/company/renovasolo-climatech/" target="_blank" rel="noopener noreferrer" class="text-[#8CCFD0] hover:underline font-semibold">LinkedIn Oficial</a>
+          <span class="text-white/40">&middot;</span>
+          <a href="https://www.instagram.com/renovasolo.climatech/" target="_blank" rel="noopener noreferrer" class="text-[#8CCFD0] hover:underline font-semibold">Instagram Oficial</a>
+        </p>
         <p class="mt-1">&copy; 2026 Renovasolo Climatech. Todos os direitos reservados.</p>
       </div>
     </div>

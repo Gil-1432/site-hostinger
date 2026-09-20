@@ -37,6 +37,18 @@ export interface DifferentialItem {
   reversed: boolean;
 }
 
+export interface ValueItem {
+  title: string;
+  description: string;
+  iconName: 'sprout' | 'users' | 'chart' | 'climate' | 'prosperity';
+}
+
+export interface MissionVisionValuesData {
+  mission: string;
+  vision: string;
+  values: ValueItem[];
+}
+
 export interface ContactFormData {
   name: string;
   email: string;
