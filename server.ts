@@ -1,10 +1,7 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
@@ -79,23 +76,49 @@ async function startServer() {
   });
 
   // Vite middleware em desenvolvimento / Arquivos estáticos em produção
-  if (process.env.NODE_ENV !== 'production') {
+  const distPath = path.join(process.cwd(), 'dist');
+  const hasDist = fs.existsSync(path.join(distPath, 'index.html'));
+  const isProduction =
+    process.env.NODE_ENV === 'production' ||
+    (hasDist && process.env.npm_lifecycle_event !== 'dev');
+
+  if (!isProduction) {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
     });
     app.use(vite.middlewares);
   } else {
-    const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
     app.get('*', (req: Request, res: Response) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🌱 [Renovasolo Node.js] Servidor rodando em http://0.0.0.0:${PORT}`);
+  // Tratamento de erros centralizado
+  app.use((err: any, req: Request, res: Response, next: any) => {
+    console.error('Erro no servidor:', err);
+    res.status(500).json({ error: 'Erro interno no servidor' });
   });
+
+  const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🌱 [Renovasolo Node.js] Servidor rodando em http://0.0.0.0:${PORT} (Modo: ${isProduction ? 'Produção' : 'Desenvolvimento'})`);
+  });
+
+  // Encerramento limpo em sinais de contêiner (Cloud Run / Docker)
+  const gracefulShutdown = () => {
+    console.log('Recebido sinal de encerramento do contêiner. Fechando conexões...');
+    server.close(() => {
+      console.log('Servidor encerrado com sucesso.');
+      process.exit(0);
+    });
+  };
+
+  process.on('SIGTERM', gracefulShutdown);
+  process.on('SIGINT', gracefulShutdown);
 }
 
-startServer();
+startServer().catch((err) => {
+  console.error('Falha crítica ao inicializar servidor do contêiner:', err);
+  process.exit(1);
+});
