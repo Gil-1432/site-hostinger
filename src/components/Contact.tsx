@@ -56,17 +56,17 @@ export const Contact: React.FC = () => {
       return;
     }
 
-    // Try submitting to Hostinger PHP endpoint if available, then show confirmation notice
+    // Submitting to Node.js backend endpoint (/api/contact)
     try {
-      fetch('./enviar-contato.php', {
+      fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
-      }).catch(() => {
-        // Silently handle if purely static host
+      }).catch((err) => {
+        console.warn('Falha no envio direto ao endpoint Node.js:', err);
       });
     } catch {
-      // Ignored in static environment
+      // Ignored in client fallback
     }
 
     // Set submission state with clear technical notification
