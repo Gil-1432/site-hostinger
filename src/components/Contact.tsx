@@ -56,17 +56,25 @@ export const Contact: React.FC = () => {
       return;
     }
 
-    // Submitting to Node.js backend endpoint (/api/contact)
+    // Submissão otimizada com suporte duplo (Hostinger PHP e Node.js API)
     try {
-      fetch('/api/contact', {
+      // Tenta enviar para o script PHP nativo da Hostinger se disponível
+      fetch('./enviar-contato.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
-      }).catch((err) => {
-        console.warn('Falha no envio direto ao endpoint Node.js:', err);
+      }).catch(() => {
+        // Fallback para endpoint Node.js se estiver rodando em servidor Node
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        }).catch(() => {
+          // Em hospedagem puramente estática, a confirmação na tela e WhatsApp cobrem o fluxo
+        });
       });
     } catch {
-      // Ignored in client fallback
+      // Tratamento silencioso em ambiente estático
     }
 
     // Set submission state with clear technical notification
